@@ -1,0 +1,47 @@
+<div class="container body-content">  
+    <form fgid="8853" [formGroup]="transferForm" (ngSubmit)="onSubmit(transferForm)">
+        <fieldset fgid="8859">
+        <legend fgid="8865">Bank Transfer</legend>
+        <div class="form-group" fgid="8899">
+            <label for="receiverBic" class="form-label mt-4" fgid="8905">Beneficiary BIC</label>
+            <input type="text" class="form-control" id="receiverBic" placeholder="Enter BIC" fgid="8913" formControlName="receiverBic">
+        </div>
+        <div class="form-group" fgid="8930">
+            <label for="beneficiaryAcno" class="form-label mt-4" fgid="8936">Beneficiary Account Number</label>
+            <input type="text" class="form-control" id="beneficiaryAcno" placeholder="Enter Account No" fgid="8944" formControlName="receiverAcno">
+        </div>
+        <div class="form-group" fgid="8930">
+            <label for="beneficiaryName" class="form-label mt-4" fgid="8936">Beneficiary Name</label>
+            <input type="text" class="form-control" id="beneficiaryName" placeholder="Enter Name" fgid="8944" formControlName="receiverName">
+        </div>
+        <div class="form-group" fgid="8930">
+            <label for="transferAmt" class="form-label mt-4" fgid="8936">Amount to be transferred in INR</label>
+            <input type="number" class="form-control" id="transferAmt" placeholder="Enter transfer amount" fgid="8944" formControlName="inrAmt">
+        </div>
+        <div class="form-group" fgid="8930">
+            <label for="transfertype" class="form-label mt-4" fgid="8959">Select transfer type</label>
+            <select class="form-select" id="transfertype" fgid="8967" formControlName="transferType">
+            <option fgid="8973">Customer Transfer</option>
+            </select>
+        </div>
+
+        <!-- <div class="form-group" fgid="8953">
+            <label for="currency" class="form-label mt-4" fgid="8959">Select currency</label>
+            <select class="form-select" id="currency" fgid="8967" formControlName="currency">
+            <option fgid="8973">1</option>
+            <option fgid="8974">2</option>
+            <option fgid="8975">3</option>
+            <option fgid="8976">4</option>
+            <option fgid="8977">5</option>
+            </select>
+        </div>
+        <div class="form-group" fgid="8930">
+            <label for="currencyAmt" class="form-label mt-4" fgid="8936">Amount converted to selected currency</label>
+            <input type="number" class="form-control" id="currencyAmt" fgid="8944" disabled>
+        </div> -->
+        
+        <br>
+        <button type="submit" class="btn btn-primary" fgid="9322">Initiate Transfer</button>
+        </fieldset>
+    </form>
+</div>  

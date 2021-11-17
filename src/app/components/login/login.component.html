@@ -1,0 +1,18 @@
+<div class="container body-content">
+    <form fgid="8853" [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm)">
+        <fieldset fgid="8859">
+        <legend fgid="8865">Bank login</legend>
+
+        <div class="form-group" fgid="8899">
+            <label for="userName" class="form-label mt-4" fgid="8905">Username</label>
+            <input type="text" class="form-control" id="userName" placeholder="Enter username" fgid="8913" formControlName="username">
+        </div>
+        <div class="form-group" fgid="8930">
+            <label for="userPassword" class="form-label mt-4" fgid="8936">Password</label>
+            <input type="password" class="form-control" id="userPassword" placeholder="Enter password" fgid="8944" formControlName="password">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" fgid="9322">Submit</button>
+        </fieldset>
+    </form>
+</div>
